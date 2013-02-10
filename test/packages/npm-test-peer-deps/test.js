@@ -16,12 +16,21 @@ require("child_process").execFile(process.execPath, [npm, "ls", "--json"], {
   var actual = JSON.parse(stdout).dependencies
   var expected = require("./npm-ls.json")
 
-  // resolved url doesn't matter
-  delete actual.dict.resolved
-  delete expected.dict.resolved
+  // ignore resolved/shasum fields for now
+  clean(actual)
+  clean(expected)
 
   console.error(JSON.stringify(actual, null, 2))
   console.error(JSON.stringify(expected, null, 2))
 
   assert.deepEqual(actual, expected)
 })
+
+function clean(obj) {
+  if (!obj) return
+  for (var i in obj) {
+    delete obj[i].resolved
+    delete obj[i].shasum
+    clean(obj[i].dependencies)
+  }
+}

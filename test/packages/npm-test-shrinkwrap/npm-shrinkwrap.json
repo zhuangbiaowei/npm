@@ -4,43 +4,59 @@
   "dependencies": {
     "npm-test-single-file": {
       "version": "1.2.3",
-      "resolved": "https://raw.github.com/gist/1837112/index.js"
+      "from": "https://raw.github.com/gist/1837112/index.js",
+      "resolved": "https://raw.github.com/gist/1837112/index.js",
+      "shasum": "c095cf7e65f8d725f2d77360e1a78cb9e8223633"
     },
     "glob": {
       "version": "3.1.5",
+      "from": "glob@git://github.com/isaacs/node-glob.git#67bda227fd7a559cca5620307c7d30a6732a792f",
       "resolved": "git://github.com/isaacs/node-glob.git#67bda227fd7a559cca5620307c7d30a6732a792f",
+      "shasum": "16590c207c07b39b9c528fddbb0c73019847337c",
       "dependencies": {
         "minimatch": {
           "version": "0.2.1",
           "dependencies": {
             "lru-cache": {
-              "version": "1.0.5"
+              "version": "1.0.5",
+              "from": "lru-cache@~1.0.5",
+              "shasum": "809d837ff359acea76e3ab2a9fe224ac2ca22319"
             }
           }
         },
         "graceful-fs": {
           "version": "1.1.5",
+          "from": "graceful-fs@1.1.5",
           "resolved": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-1.1.5.tgz",
+          "shasum": "cf540c415e289e5bd990c3d1af9d9cfe0053e226",
           "dependencies": {
             "fast-list": {
               "version": "1.0.2",
-              "resolved": "https://registry.npmjs.org/fast-list/-/fast-list-1.0.2.tgz"
+              "from": "fast-list@1",
+              "resolved": "https://registry.npmjs.org/fast-list/-/fast-list-1.0.2.tgz",
+              "shasum": "a1203b5da9f320be14340b3bec2ba268d87dc209"
             }
           }
         },
         "inherits": {
           "version": "1.0.0",
-          "resolved": "https://registry.npmjs.org/inherits/-/inherits-1.0.0.tgz"
+          "from": "https://registry.npmjs.org/inherits/-/inherits-1.0.0.tgz",
+          "resolved": "https://registry.npmjs.org/inherits/-/inherits-1.0.0.tgz",
+          "shasum": "5bdd80eb8dbe8ca822e18921e62ab726592062d2"
         }
       }
     },
     "minimatch": {
       "version": "0.1.5",
+      "from": "https://registry.npmjs.org/minimatch/-/minimatch-0.1.5.tgz",
       "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-0.1.5.tgz",
+      "shasum": "c376c417adcd1814acb673b7f3e58475c19ada62",
       "dependencies": {
         "lru-cache": {
-          "version": "1.0.5",
-          "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-1.0.5.tgz"
+          "version": "1.0.6",
+          "from": "https://registry.npmjs.org/lru-cache/-/lru-cache-1.0.6.tgz",
+          "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-1.0.6.tgz",
+          "shasum": "aa50f97047422ac72543bda177a9c9d018d98452"
         }
       }
     }
